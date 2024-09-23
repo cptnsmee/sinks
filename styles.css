@@ -65,6 +65,7 @@ p {
 .main-content {
     padding: 20px;
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     gap: 20px;
 }
