@@ -41,20 +41,22 @@ p {
     background-color: #333333;
     color: white;
     padding: 15px;
-    text-align: left;
 }
 
 .nav ul {
     list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .nav ul li {
-    margin-bottom: 10px;
-    display: inline;
+    margin-bottom: 0; 
 }
 
 .nav ul li a {
     color: white;
+    padding: 8px;
     text-decoration: none;
 }
 
