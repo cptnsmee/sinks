@@ -50,12 +50,12 @@ p {
 
 .nav ul li {
     margin-bottom: 10px;
+    display: inline;
 }
 
 .nav ul li a {
     color: white;
     text-decoration: none;
-    display: inline;
 }
 
 .nav ul li a:hover {
