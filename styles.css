@@ -1,27 +1,13 @@
-/* Outdated CSS */
-body {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-h1 {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
+body {
+    line-height: 1.6;
 }
 
 img {
@@ -29,7 +15,92 @@ img {
     height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.nav {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.sink-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sink-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.sink-features {
+    grid-column: span 2;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
