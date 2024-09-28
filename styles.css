@@ -23,6 +23,15 @@ p {
     margin-bottom: 20px;
 }
 
+section{
+    display: flex;
+    grid-column: 25% 25% 25% 25%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 .header {
     background-color: #cccccc;
     text-align: center;
@@ -77,29 +86,6 @@ p {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-
-.sink-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.sink-card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-
-.sink-features {
-    grid-column: span 2;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
 
 .footer {
     background-color: #cccccc;
