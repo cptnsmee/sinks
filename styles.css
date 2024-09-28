@@ -25,7 +25,7 @@ p {
 
 section{
     display: flex;
-    grid-column: 25% 25% 25% 25%;
+    
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
@@ -53,7 +53,6 @@ section{
 }
 
 .nav ul {
-    list-style-type: none;
     display: flex; 
     justify-content: center; 
     gap: 20px; 
@@ -63,12 +62,6 @@ section{
     margin-bottom: 0; 
 }
 
-.nav ul li a {
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-}
-
 .nav ul li a:hover {
     text-decoration: underline;
 }
@@ -76,7 +69,6 @@ section{
 .main-content {
     padding: 20px;
     display: grid;
-    justify-content: center;
     grid-template-columns: 1fr;
     gap: 20px;
 }
