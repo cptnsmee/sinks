@@ -53,7 +53,7 @@ section{
 }
 
 .nav ul {
-    display: flex; 
+    display: inline; 
     justify-content: center; 
     gap: 20px; 
 }
@@ -69,15 +69,44 @@ section{
 .main-content {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     gap: 20px;
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section3";
 }
 
 @media (min-width: 768px) {
     .main-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section1 section2"
+            "section3 section3";
     }
 }
+
+@media (min-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section1 section2"
+            "section3 section3";
+    }
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
 .footer {
     background-color: #cccccc;
     text-align: center;
