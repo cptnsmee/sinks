@@ -25,7 +25,6 @@ p {
 
 section{
     display: flex;
-    
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
@@ -69,13 +68,13 @@ section{
 .main-content {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 20px;
 }
 
 @media (min-width: 768px) {
     .main-content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
